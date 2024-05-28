@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -12,7 +13,6 @@ export default function Navbar() {
   const closeMenu = () => {
     setIsOpen(false);
   };
-
 
   const menuIcon = isOpen ? (
     <i className="uil cursor-pointer uil-multiply text-raisin-black"></i>

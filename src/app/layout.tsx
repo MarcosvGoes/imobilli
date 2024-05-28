@@ -1,7 +1,7 @@
-// src/pages/layout.tsx
 import Footer from "@/components/Footer/Footer";
 import Navbar from "@/components/Navbar/Navbar";
 import { Poppins } from "next/font/google";
+import '../styles/global.css'
 
 export const poppins = Poppins({
   subsets: ["latin"],
@@ -14,13 +14,16 @@ const RootLayout = ({
   children: React.ReactNode;
 }) => {
   return (
-    <div className={poppins.className}>
-      <Navbar />
-      <main className="pt-14">
+    <html className={poppins.className}>
+      <head>
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
+      </head>
+      <body className="pt-14">
+        <Navbar />
         {children}
-      </main>
-      <Footer />
-    </div>
+        <Footer />
+      </body>
+    </html>
   );
 };
 
