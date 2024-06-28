@@ -1,5 +1,6 @@
 import { Url } from "next/dist/shared/lib/router/router";
 import Link from "next/link";
+import styles from './Button.module.css'
 
 interface ButtonProps {
     label: string;
@@ -13,7 +14,7 @@ interface ButtonProps {
 export default function Button({ label, disabled, href, className, themeDark, onClick }: ButtonProps) {
     return (
         <Link href={href}>
-            <button onClick={onClick} className={`${disabled ? 'hidden' : ''} ${className} ${themeDark ? 'px-4 py-2 border border-gray-300 text-gray-300 bg-gray-800 rounded-lg shadow-sm lg:hover:bg-gray-700 lg:active:bg-gray-900 lg:focus:outline-none lg:focus:ring-2 lg:focus:ring-offset-2 lg:focus:ring-gray-500 transition ease-in-out duration-150' : 'px-4 py-2 border border-black text-black rounded-lg shadow-sm lg:hover:bg-gray-100 lg:active:bg-gray-200 lg:focus:outline-none lg:focus:ring-2 lg:focus:ring-offset-2 lg:focus:ring-gray-500 transition ease-in-out duration-150'}`}>
+            <button onClick={onClick} className={`${disabled ? 'hidden' : ''} ${className} bg-white dark:bg-black text-black dark:text-white font-inherit px-3 py-1.5 font-extrabold text-lg border-4 border-black dark:border-white rounded-md shadow-[0.1em_0.1em] cursor-pointer hover:translate-x-[-0.05em] hover:translate-y-[-0.05em] hover:shadow-[0.15em_0.15em] active:translate-x-[0.05em] active:translate-y-[0.05em] active:shadow-[0.05em_0.05em] `}>
                 {label}
             </button>
         </Link>

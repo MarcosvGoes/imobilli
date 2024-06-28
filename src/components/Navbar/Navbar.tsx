@@ -37,6 +37,7 @@ export default function Navbar() {
           <Button onClick={closeMenu} label="Entrar" href={'/signin'} className="font-medium"/>
         </div>
       </ul>
+      <i />
     </nav>
   )
 }
