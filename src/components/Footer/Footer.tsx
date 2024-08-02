@@ -5,8 +5,8 @@ import Link from "next/link"
 export default function Footer() {
     return (
         <footer className="bg-[#110e0b] w-screen h-full">
+            {/*<section>
             <main className="text-white max-w-[90%] mx-auto gap-y-10 py-10 gap-x-5 p-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-                {/*<section>
                     <h2 className="text-xl lg:text-4xl mb-1 font-semibold">Comprar</h2>
                     <ul className="ml-2 font-medium mt-2 text-xl">
                         <li className="py-2"><Link href={'/'}>Compra</Link></li>
@@ -23,7 +23,7 @@ export default function Footer() {
                         <li className="py-2"><Link href={'/'}>Venda com Segurança</Link></li>
                         <li className="py-2"><Link href={'/'}>Guia do Vendedor</Link></li>
                     </ul>
-                </section> */}
+                </section>
                 <section>
                     <h2 className="text-xl lg:text-4xl mb-1 font-semibold">Alugar</h2>
                     <ul className="ml-2 font-medium mt-2 text-md md:text-lg">
@@ -63,15 +63,16 @@ export default function Footer() {
                     </ul>
                 </section>
             </main>
-            <section className="bg-white border-white text-center w-screen">
+                */}
+            <section className="bg-[#F5F5F5] border-white text-center w-screen">
                 <div className="flex justify-between mx-auto max-w-[90%] text-white py-3">
-                <Link className="hover:scale-105" href="/"><Image src="icons/imobilli.svg" height={60} width={60} alt="Imobbili Logo" /></Link>
-                <ul className="flex gap-x-3 items-center text-center">
-                <Link className="hover:scale-105" target="_blank" href={"https://www.instagram.com/imobilli_/"}><i className="uil uil-instagram text-black text-xl"></i></Link>
-                <Link className="hover:scale-105" target="_blank" href={"#"}><i className="uil uil-facebook-f text-black text-xl"></i></Link>
-                <Link className="hover:scale-105" target="_blank" href={"#"}><i className="uil uil-youtube text-black text-xl"></i></Link>
-                <Link className="hover:scale-105" target="_blank" href={"#"}><Image src="/icons/x.svg" alt="logo x icon" width={15} height={15}/></Link>
-                </ul>
+                    <Link className="hover:scale-105" href="/"><Image src="icons/imobilli.svg" height={60} width={60} alt="Imobbili Logo" /></Link>
+                    <ul className="flex gap-x-3 items-center text-center">
+                        <Link className="hover:scale-105" target="_blank" href={"https://www.instagram.com/imobilli_/"}><i className="uil uil-instagram text-black text-xl"></i></Link>
+                        <Link className="hover:scale-105" target="_blank" href={"#"}><i className="uil uil-facebook-f text-black text-xl"></i></Link>
+                        <Link className="hover:scale-105" target="_blank" href={"#"}><i className="uil uil-youtube text-black text-xl"></i></Link>
+                        <Link className="hover:scale-105" target="_blank" href={"#"}><Image src="/icons/x.svg" alt="logo x icon" width={15} height={15} /></Link>
+                    </ul>
                 </div>
                 <p className="font-semibold text-sm pb-3">Copyright © {currentYear}</p>
             </section>

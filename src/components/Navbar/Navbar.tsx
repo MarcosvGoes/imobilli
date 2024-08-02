@@ -10,6 +10,7 @@ export default function Navbar() {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+  
   const closeMenu = () => {
     setIsOpen(false);
   };
@@ -29,12 +30,12 @@ export default function Navbar() {
       <ul className={`fixed w-full right-0 text-end bg-[#F5F5F5] shadow-[0_3px_0_rgb(0,0,0,0.2)] transition-all duration-500 ease-in-out transform ${isOpen ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'} p-5 rounded-lg`}>
         <Link onClick={closeMenu} href="/"><li className="mb-2 font-medium">Início</li></Link>
         <Link onClick={closeMenu} href="/about"><li className="mb-2 font-medium">Sobre Nós</li></Link>
-        <Link onClick={closeMenu} href="/landlord-guide"><li className="mb-2 font-medium">Guia do Locador</li></Link>
-        <Link onClick={closeMenu} href="/tenant-guide"><li className="mb-2 font-medium">Guia do Locatário</li></Link>
+        <Link onClick={closeMenu} href="/lessor-guide"><li className="mb-2 font-medium">Guia do Locador</li></Link>
+        <Link onClick={closeMenu} href="/lessee-guide"><li className="mb-2 font-medium">Guia do Locatário</li></Link>
         <Link onClick={closeMenu} href="/help"><li className="mb-2 font-medium">Ajuda</li></Link>
         <div className="flex gap-x-2 mt-3 justify-end">
-          <Button onClick={closeMenu} label="Criar conta" href={'/signup'} themeDark className="font-medium"/>
-          <Button onClick={closeMenu} label="Entrar" href={'/signin'} className="font-medium"/>
+          <Button onClick={closeMenu} label="Criar conta" href={'/signup'} themeDark className="font-semibold text-base"/>
+          <Button onClick={closeMenu} label="Entrar" href={'/signin'} className="font-semibold text-base"/>
         </div>
       </ul>
       <i />
