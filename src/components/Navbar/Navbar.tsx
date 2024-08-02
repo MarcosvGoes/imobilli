@@ -34,8 +34,8 @@ export default function Navbar() {
         <Link onClick={closeMenu} href="/lessee-guide"><li className="mb-2 font-medium">Guia do Locatário</li></Link>
         <Link onClick={closeMenu} href="/help"><li className="mb-2 font-medium">Ajuda</li></Link>
         <div className="flex gap-x-2 mt-3 justify-end">
-          <Button onClick={closeMenu} label="Criar conta" href={'/signup'} themeDark className="font-semibold text-base"/>
-          <Button onClick={closeMenu} label="Entrar" href={'/signin'} className="font-semibold text-base"/>
+          <Button onClick={closeMenu} label="Criar conta" className="font-semibold text-sm"><Link href="https://appimobilli.vercel.app/signup" target="_blank"/></Button>
+          <Button onClick={closeMenu} label="Entrar" className="font-semibold text-sm"><Link href="https://appimobilli.vercel.app/signin" target="_blank"/></Button>
         </div>
       </ul>
       <i />

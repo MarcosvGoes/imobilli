@@ -1,5 +1,6 @@
 import Button from "@/components/Button/Button";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -8,7 +9,7 @@ export default function Home() {
         <div className="w-full max-w-[90%] mx-auto">
           <h1 className="text-xl text-raisin-black font-bold text-center mt-10">Simples, <br /> confiável e segura,<br /> para quem busca praticidade</h1>
           <p className="text-sm text-raisin-black text-center mt-2">Automatize cobranças, contratos e gerencie aluguéis sem dor de cabeça</p>
-          <Button href="/signup" label="Cadastre-se" className="font-bold mx-auto flex mt-10" />
+          <Button label="Cadastre-se" className="font-bold mx-auto flex mt-10" ><Link href="https://appimobilli.vercel.app/signup" target="_blank"/></Button>
         </div>
         <Image className="mb-10" src='/assets/homeone.png' layout="responsive" width={100} height={100} alt="Troca de chaves por imóvel" />
       </section>
